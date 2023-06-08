@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- bean definitions here -->
+	<context:annotation-config />
+	
+		<bean id="student"
+			class="com.learnspring.spring_core.bean.Student">
+
+			<!-- <property name="firstName"><value>rushikesh</value></property> -->
+			<!-- <property name="age" value="24" /> -->
+
+		</bean>
+         <!-- If we have to bean of one class what will happen let see -->
+		<bean id="st"
+			class="com.learnspring.spring_core.configrationfilebased.Employee" scope="prototype">
+			<constructor-arg value="abhi" type="String"></constructor-arg>
+			<constructor-arg value="23" type="Integer"></constructor-arg>
+			<constructor-arg value="null" type="String"></constructor-arg>
+		</bean>
+		
+		
+		<!--  <bean id="st1" class="com.learnspring.spring_core.configrationfilebased.Employee">
+		 <constructor-arg value="rushi" type="String"></constructor-arg>
+		 <constructor-arg value="21" type="Integer"></constructor-arg>
+		 <constructor-arg value="malvadkar" type="String"></constructor-arg>
+        </bean>-->
+        
+         
+	</beans>
