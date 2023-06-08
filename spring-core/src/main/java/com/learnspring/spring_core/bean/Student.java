@@ -27,7 +27,6 @@ public class Student {
 		return firstName;
 	}
     
-	@Value("abhi")
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
@@ -36,7 +35,7 @@ public class Student {
 		return age;
 	}
     
-	@Value("23")
+	
 	public void setAge(Integer age) {
 		this.age = age;
 	}
