@@ -32,6 +32,10 @@
 		 <constructor-arg value="21" type="Integer"></constructor-arg>
 		 <constructor-arg value="malvadkar" type="String"></constructor-arg>
         </bean>-->
+        <bean id="Debite" class="com.learnspring.spring_core.configrationfilebased.DebiteCardpaymentImpOfIpayment"></bean>
+        <bean id="gpay" class="com.learnspring.spring_core.configrationfilebased.GPayPaymentIpmPayment"></bean>
+        <bean id="billprocess" class="com.learnspring.spring_core.configrationfilebased.GPayPaymentIpmPayment">
+        <property name="ipayment" ref="Debite"></property>
+        </bean>
         
-         
 	</beans>

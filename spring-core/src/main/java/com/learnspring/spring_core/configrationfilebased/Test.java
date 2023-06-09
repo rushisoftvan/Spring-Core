@@ -39,5 +39,7 @@ public class Test {
 		Employee secondbean = context.getBean(Employee.class);
 		context.getBean(Employee.class);
 		System.out.println(secondbean.hashCode());
+		
+		context.getBean(BillProcess.class);
 	}
 }
