@@ -1,0 +1,26 @@
+
+1) what is spring bean
+- which java class manage by ioc contational it's called spring bean.
+
+2)how to represent java class as spring bean
+ - by using xml configration  <bean id="student" class="com.learn.Student"
+ - by using annotation(@Component,@Service, @Repositry)
+
+3) if our class dependent to another class then how ew can inject it for that we have to say to spring by using the annotation @Autowired😐️
+we can use this anoottaion on variable, Method , Constructer
+
+
+- if we use on method level it's called setter injection 
+  if we will use on constructer level hen it called constructer level injection
+  if we will use on variable level  it called filed level injection  
+
+4) @Configration we have to tell to spring to read this class and to create object which available in class
+
+5) @Bean It is to when we have to create object of the class and give to this object for  to the ioc to manage this object
+ we have to use this bean for swagger configratio, Security configratuion
+
+@Repositry we use on dao class because if any  occure when we communicate with database if we use the @Repositry it will transfer the message  exception in good manner
+
+@qualifier we have to use if two bean are available for the same type there is am 
+
+In spring framwork we have to enable the annotation in configration xml file <context: annotation cpnfig/>

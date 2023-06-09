@@ -34,8 +34,8 @@
         </bean>-->
         <bean id="Debite" class="com.learnspring.spring_core.configrationfilebased.DebiteCardpaymentImpOfIpayment"></bean>
         <bean id="gpay" class="com.learnspring.spring_core.configrationfilebased.GPayPaymentIpmPayment"></bean>
-        <bean id="billprocess" class="com.learnspring.spring_core.configrationfilebased.GPayPaymentIpmPayment">
-        <property name="ipayment" ref="Debite"></property>
+        <bean id="billprocess" class="com.learnspring.spring_core.configrationfilebased.BillProcess">
+       <constructor-arg ref="gpay"/>
         </bean>
         
 	</beans>
